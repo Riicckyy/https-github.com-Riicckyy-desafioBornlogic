@@ -10,14 +10,22 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    
+    // Este método é chamado quando a cena está prestes a se conectar
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        // Garante que a cena recebida seja do tipo UIWindowScene
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        // Configura a janela principal
+        let window = UIWindow(windowScene: windowScene)
+        // Cria o controlador de navegação com ArticlesViewController como root
+        let navigationController = UINavigationController(rootViewController: ArticlesViewController())
+        window.rootViewController = navigationController
+        self.window = window
+        window.makeKeyAndVisible() // Torna a janela visível
     }
+    
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

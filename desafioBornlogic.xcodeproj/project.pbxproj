@@ -9,25 +9,50 @@
 /* Begin PBXBuildFile section */
 		AF77E9982BF270650032954D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E9972BF270650032954D /* AppDelegate.swift */; };
 		AF77E99A2BF270650032954D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E9992BF270650032954D /* SceneDelegate.swift */; };
-		AF77E99C2BF270650032954D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E99B2BF270650032954D /* ViewController.swift */; };
-		AF77E99F2BF270650032954D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF77E99D2BF270650032954D /* Main.storyboard */; };
 		AF77E9A12BF270670032954D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF77E9A02BF270670032954D /* Assets.xcassets */; };
-		AF77E9A42BF270670032954D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF77E9A22BF270670032954D /* LaunchScreen.storyboard */; };
+		AF77E9B32BF277070032954D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E9B22BF277070032954D /* Article.swift */; };
+		AF77E9B52BF2772A0032954D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E9B42BF2772A0032954D /* APIManager.swift */; };
+		AF77E9BB2BF27F560032954D /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E9BA2BF27F560032954D /* ArticlesViewController.swift */; };
+		AF77E9BF2BF27FBF0032954D /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77E9BE2BF27FBF0032954D /* ArticleDetailViewController.swift */; };
+		AF89C0AA2BF3BE0C00B3DB76 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89C0A92BF3BE0C00B3DB76 /* ArticleTableViewCell.swift */; };
+		AFAEEE452BF3F2D600456C61 /* desafioBornlogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEEE442BF3F2D600456C61 /* desafioBornlogicTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFAEEE462BF3F2D600456C61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF77E98C2BF270650032954D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF77E9932BF270650032954D;
+			remoteInfo = desafioBornlogic;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF77E9942BF270650032954D /* desafioBornlogic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafioBornlogic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF77E9972BF270650032954D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF77E9992BF270650032954D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF77E99B2BF270650032954D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF77E99E2BF270650032954D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF77E9A02BF270670032954D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF77E9A32BF270670032954D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF77E9A52BF270670032954D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF77E9B22BF277070032954D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		AF77E9B42BF2772A0032954D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AF77E9BA2BF27F560032954D /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		AF77E9BE2BF27FBF0032954D /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		AF89C0A92BF3BE0C00B3DB76 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		AFAEEE422BF3F2D600456C61 /* desafioBornlogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioBornlogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAEEE442BF3F2D600456C61 /* desafioBornlogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafioBornlogicTests.swift; sourceTree = "<group>"; };
+		AFAEEE512BF3FC6800456C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF77E9912BF270650032954D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAEEE3F2BF3F2D600456C61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				AF77E9962BF270650032954D /* desafioBornlogic */,
+				AFAEEE432BF3F2D600456C61 /* desafioBornlogicTests */,
 				AF77E9952BF270650032954D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				AF77E9942BF270650032954D /* desafioBornlogic.app */,
+				AFAEEE422BF3F2D600456C61 /* desafioBornlogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +83,66 @@
 		AF77E9962BF270650032954D /* desafioBornlogic */ = {
 			isa = PBXGroup;
 			children = (
+				AF77E9B12BF276690032954D /* Models */,
+				AF77E9B02BF276610032954D /* Views */,
+				AF77E9AF2BF276560032954D /* Controllers */,
+				AF77E9AE2BF276440032954D /* Services */,
+				AF77E9AD2BF276380032954D /* Helpers */,
 				AF77E9972BF270650032954D /* AppDelegate.swift */,
 				AF77E9992BF270650032954D /* SceneDelegate.swift */,
-				AF77E99B2BF270650032954D /* ViewController.swift */,
-				AF77E99D2BF270650032954D /* Main.storyboard */,
 				AF77E9A02BF270670032954D /* Assets.xcassets */,
-				AF77E9A22BF270670032954D /* LaunchScreen.storyboard */,
 				AF77E9A52BF270670032954D /* Info.plist */,
 			);
 			path = desafioBornlogic;
+			sourceTree = "<group>";
+		};
+		AF77E9AD2BF276380032954D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF77E9AE2BF276440032954D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF77E9B42BF2772A0032954D /* APIManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF77E9AF2BF276560032954D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF77E9BA2BF27F560032954D /* ArticlesViewController.swift */,
+				AF77E9BE2BF27FBF0032954D /* ArticleDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF77E9B02BF276610032954D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF89C0A92BF3BE0C00B3DB76 /* ArticleTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF77E9B12BF276690032954D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF77E9B22BF277070032954D /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFAEEE432BF3F2D600456C61 /* desafioBornlogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFAEEE512BF3FC6800456C61 /* Info.plist */,
+				AFAEEE442BF3F2D600456C61 /* desafioBornlogicTests.swift */,
+			);
+			path = desafioBornlogicTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +165,24 @@
 			productReference = AF77E9942BF270650032954D /* desafioBornlogic.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AFAEEE412BF3F2D600456C61 /* desafioBornlogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAEEE4A2BF3F2D600456C61 /* Build configuration list for PBXNativeTarget "desafioBornlogicTests" */;
+			buildPhases = (
+				AFAEEE3E2BF3F2D600456C61 /* Sources */,
+				AFAEEE3F2BF3F2D600456C61 /* Frameworks */,
+				AFAEEE402BF3F2D600456C61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFAEEE472BF3F2D600456C61 /* PBXTargetDependency */,
+			);
+			name = desafioBornlogicTests;
+			productName = desafioBornlogicTests;
+			productReference = AFAEEE422BF3F2D600456C61 /* desafioBornlogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +195,10 @@
 				TargetAttributes = {
 					AF77E9932BF270650032954D = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					AFAEEE412BF3F2D600456C61 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = AF77E9932BF270650032954D;
 					};
 				};
 			};
@@ -116,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				AF77E9932BF270650032954D /* desafioBornlogic */,
+				AFAEEE412BF3F2D600456C61 /* desafioBornlogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +226,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF77E9A42BF270670032954D /* LaunchScreen.storyboard in Resources */,
 				AF77E9A12BF270670032954D /* Assets.xcassets in Resources */,
-				AF77E99F2BF270650032954D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAEEE402BF3F2D600456C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +244,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF77E99C2BF270650032954D /* ViewController.swift in Sources */,
+				AF77E9B52BF2772A0032954D /* APIManager.swift in Sources */,
+				AF89C0AA2BF3BE0C00B3DB76 /* ArticleTableViewCell.swift in Sources */,
 				AF77E9982BF270650032954D /* AppDelegate.swift in Sources */,
+				AF77E9BB2BF27F560032954D /* ArticlesViewController.swift in Sources */,
 				AF77E99A2BF270650032954D /* SceneDelegate.swift in Sources */,
+				AF77E9B32BF277070032954D /* Article.swift in Sources */,
+				AF77E9BF2BF27FBF0032954D /* ArticleDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAEEE3E2BF3F2D600456C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAEEE452BF3F2D600456C61 /* desafioBornlogicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		AF77E99D2BF270650032954D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF77E99E2BF270650032954D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		AFAEEE472BF3F2D600456C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF77E9932BF270650032954D /* desafioBornlogic */;
+			targetProxy = AFAEEE462BF3F2D600456C61 /* PBXContainerItemProxy */;
 		};
-		AF77E9A22BF270670032954D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF77E9A32BF270670032954D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AF77E9A62BF270670032954D /* Debug */ = {
@@ -297,7 +404,6 @@
 				INFOPLIST_FILE = desafioBornlogic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +431,6 @@
 				INFOPLIST_FILE = desafioBornlogic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,6 +443,48 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFAEEE482BF3F2D600456C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44MCDJ79G5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = desafioBornlogicTests/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HenriqueRossi.desafioBornlogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafioBornlogic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/desafioBornlogic";
+			};
+			name = Debug;
+		};
+		AFAEEE492BF3F2D600456C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44MCDJ79G5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = desafioBornlogicTests/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HenriqueRossi.desafioBornlogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafioBornlogic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/desafioBornlogic";
 			};
 			name = Release;
 		};
@@ -358,6 +505,15 @@
 			buildConfigurations = (
 				AF77E9A92BF270670032954D /* Debug */,
 				AF77E9AA2BF270670032954D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAEEE4A2BF3F2D600456C61 /* Build configuration list for PBXNativeTarget "desafioBornlogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAEEE482BF3F2D600456C61 /* Debug */,
+				AFAEEE492BF3F2D600456C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

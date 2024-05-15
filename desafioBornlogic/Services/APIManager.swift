@@ -7,37 +7,52 @@
 
 import Foundation
 
-// Gerencia chamadas à NewsAPI e decodificação de dados
-class APIManager {
-    static let shared = APIManager()
+// Protocolo para definir a interface de fetchArticles
+protocol APIManagerProtocol {
+    func fetchArticles(completion: @escaping ([Article]?, Error?) -> Void)
+}
 
+// Classe para gerenciar chamadas à NewsAPI e decodificação de dados
+class APIManager: APIManagerProtocol {
+    static let shared = APIManager()  // Instância compartilhada (singleton)
+
+    // Função para buscar artigos da API
     func fetchArticles(completion: @escaping ([Article]?, Error?) -> Void) {
-        let urlString = "https://newsapi.org/v2/everything?q=tesla&from=2024-04-13&sortBy=publishedAt&apiKey=cfaa4da92aa047de899b534987ae07c6"
+        // Atualiza a URL com uma palavra-chave mais genérica e sem limitar a data
+        let urlString = "https://newsapi.org/v2/everything?q=notícias&sortBy=publishedAt&language=pt&apiKey=cfaa4da92aa047de899b534987ae07c6"
         guard let url = URL(string: urlString) else {
             completion(nil, NSError(domain: "APIManager", code: 0, userInfo: [NSLocalizedDescriptionKey: "URL inválida"]))
             return
         }
 
+        // Cria uma tarefa de URLSession para buscar os dados da API
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 completion(nil, error)
                 return
             }
 
-            guard let data = data, let articles = try? JSONDecoder().decode(ArticlesResponse.self, from: data) else {
-                completion(nil, NSError(domain: "APIManager", code: 1, userInfo: [NSLocalizedDescriptionKey: "Falha ao decodificar dados"]))
+            guard let data = data else {
+                completion(nil, NSError(domain: "APIManager", code: 1, userInfo: [NSLocalizedDescriptionKey: "Dados inválidos"]))
                 return
             }
 
-            completion(articles.articles, nil)
+            // Para fins de depuração: imprime os dados recebidos como string
+            if let jsonString = String(data: data, encoding: .utf8) {
+                print("Dados recebidos: \(jsonString)")
+            }
+
+            // Tenta decodificar os dados recebidos para o modelo ArticlesResponse
+            do {
+                let articlesResponse = try JSONDecoder().decode(ArticlesResponse.self, from: data)
+                completion(articlesResponse.articles, nil)
+            } catch {
+                // Para fins de depuração: imprime o erro de decodificação
+                print("Erro ao decodificar dados: \(error)")
+                completion(nil, error)
+            }
         }
 
-        task.resume()
+        task.resume()  // Inicia a tarefa
     }
 }
-
-// Estrutura auxiliar para decodificar a resposta
-struct ArticlesResponse: Decodable {
-    let articles: [Article]
-}
-    
